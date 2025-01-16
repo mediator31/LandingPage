@@ -1,109 +1,176 @@
-html,
-body {
+body,html{
+    margin: 0;
+    padding:0;
+    border:0px;
+    font-family: Roboto;
+    background-color:#1f2937;
+
+}
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100%;
-
+    
 }
-
-.main {
-    width: 100%;
+.main{
+    
     display: flex;
     flex-direction: column;
-    font-family: Roboto, sans-serif;
+    align-items: center;
+    background-color: white;
+    
 }
-
-.main>* {
-    display: flex;
-    align-items: top;
-    flex-grow: 1;
-    padding: 0 30em;
-    margin: 0;
+.main> *{
+    width: 100%;
+    padding: 0 20vw;
+   
 }
-
-.first,
-nav,
-footer {
+nav,.first{
     background-color: #1f2937;
-}
 
-nav {
+}
+nav{
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-grow: 0;
-    padding-top: 5px;
-
+    align-content: start;
+    
 }
-
-.Logo {
+nav>*{
+    margin: 30px 0;
+}
+.Logo{
     font-size: 24px;
-    color: #F9FAF8;
+    color: #f9faf8;
     font-weight: 900;
 }
-
-nav ul {
+nav ul{
     display: flex;
-    flex-direction: row;
-    color: #E5E7EB;
-    font-size: 18px;
+    gap:25px;
+}
+nav ul li{
     list-style: none;
-    margin: 0;
-
-
+    color: #E5E7EB;
+    font-size: 18px;   
 }
-
-nav ul li {
-    margin-right: 15px;
-
+.first{
+    display: flex;
+    
+    
 }
-
-
-
-.first {
+.first>*{
+    flex : 1 ; 
+    margin: 70px 0; 
+}
+.left h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    
+}
+.left p{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-right: 4.8vw;
+    margin-bottom:15px ;
+}
+.left button{
+    background-color: #3882F6;
+    border: none;
+    color: #E5E7EB;
+    font-weight: 800;
+    padding: 5px 35px;
+    border-radius: 7px;
+}
+.left{
+    flex:1.3;
+}
+.right{
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: white;
+    
+    background-color: lightgray;
+    
 }
 
-.first>* {
-    border: 1px red solid;
-    flex: 1;
-    height: 100%;
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+    margin-bottom: 125px;
+    
 }
-
-.first .left {
-    padding: 0 15px;
-
-
-
-}
-
-.first .left h1 {
-    font-size: 48px;
-    color: #F9FAF8;
+.second h2{
+    font-size: 36px;
     font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 60px;
 }
+.illustration{
+    background-image: url(https://images.pexels.com/photos/30206360/pexels-photo-30206360/free-photo-of-femme-elegante-en-rouge-sur-fond-floral-vibrant.jpeg);
+    background-size: cover;
+    border: 5px blue solid;
+    height: 170px;
+    border-radius: 15px;
+    width: 170px;
+    margin-bottom: 30px;
 
-.first .left p {
-    font-size: 18px;
-    color: #E5E7EB
 }
-
-.first .left button {
+.second ul{
+    display: flex;
+    gap: 35px;
+}
+.second ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second p{
+    text-align: center;
+    width: 170px;
+}
+.third{
+    display: flex;
+    background-color:#E5E7EB ;
+    margin-bottom: 110px;
+}
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: #1f2937;
+    margin: 80px 0;
+   
+}
+#author{
+    text-align: right;
+    margin-top: 32px;
+}
+.call-to-action{
+    display: flex;
+    background-color: #3882F6;
+    justify-content: space-between;
+    padding: 50px 95px;
+    margin-bottom:100px;
+    
+    border-radius: 5px;
+    color: #ffffff;
+}
+.call-to-action button{
+    padding: 5px 55px;
+    border:1px white solid;
     background-color: #3882F6;
     color: #ffffff;
-    padding: 5px 25px;
-    border: none;
-    border-radius: 5px;
+    font-weight: 1000;
+    border-radius: 150px;
 }
-
-.first .right {
-    text-align: center;
-    align-content: center;
-    height: 100%;
-    background-color: gray;
-    color: white;
-    align-self: stretch;
-}
-.first .right img{
-    height: 100%;
+footer{
+    display: flex;
+    background-color: #1f2937;
+    color: #f9faf8;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
 }
